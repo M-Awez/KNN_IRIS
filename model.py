@@ -48,7 +48,7 @@ class KNN:
       pickle.dump(self.cla,f)
 
 if __name__=="__main__":
-  obj=KNN('Z:\ML Viharatech Projects\KNN(Classification)\Iris.csv')
+  obj=KNN('path')
   X_train,X_test,y_train,y_test=obj.split()
   obj.train(X_train,y_train)
   train_prd=obj.prediction(X_train)
